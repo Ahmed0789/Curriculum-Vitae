@@ -1,0 +1,74 @@
+body {
+    padding-top: 4%;
+    background: linear-gradient( to right, rgb(217, 167, 199), rgb(255, 252, 220));
+    color: black;
+    max-width: 600px;
+    margin: auto;
+    font-family: Calibri, Helvetica, sans-serif;
+    padding-bottom: 10%;
+    font-weight: 600;
+}
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    color: white;
+    padding-left: 10px;
+}
+
+.toolbar img {
+    margin: 0 30px;
+    box-shadow: 0px 4px 6px grey;
+    height: 40px;
+    width: 200px;
+}
+
+p {
+    line-height: 1.7;
+    /* margin-bottom: 3rem; */
+    padding-bottom: 3rem;
+}
+
+article {
+    border-bottom: 2px solid rgb(196, 194, 194);
+}
+
+article+article {
+    margin-top: 1rem;
+    /* padding-top: 1px; */
+    border-bottom: 2px solid rgb(196, 194, 194);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    box-shadow: 2px 5px 10px black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+svg#clouds {
+    position: fixed;
+    bottom: -180px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+}
