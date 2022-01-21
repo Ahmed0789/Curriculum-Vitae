@@ -5,7 +5,7 @@
     <div class="py-6 px-5 lg:flex">
         <div class="flex-1 lg:mr-8">
             {{--TODO--}}
-            <img src="/images/illustration-1.png" alt="Blog Post illustration" class="rounded-xl">
+            <img src="https://i.pravatar.cc/500?u={{auth()->id()}}" alt="{{ $post->author->name }} CV" class="rounded-xl">
         </div>
 
         <div class="flex-1 flex flex-col justify-between">
@@ -30,10 +30,19 @@
             <div class="text-sm mt-2 space-y-4">
                 {!!$post->excerpt!!}
             </div>
+            {{--TODO--}}
+            <div class="mt-2 space-y-4">
+                <h2 class="decoration-8"> Skill Set of
+                    <span class="text-sm underline"> {{ $post->author->name }}</span> </h2>
+                <p>
+                    Project Management
+                    Graphic Editing
+                </p>
+            </div>
 
             <footer class="flex justify-between items-center mt-8">
                 <div class="flex items-center text-sm">
-                    <img src="/images/lary-avatar.svg" alt="Lary avatar">
+                    <img src="https://i.pravatar.cc/60?u={{auth()->id()}}" alt="Lary avatar">
                     <div class="ml-3">
                         <h5 class="font-bold">By <a
                                 href="/?author={{$post->author->username}}">{{$post->author->name}}</a></h5>

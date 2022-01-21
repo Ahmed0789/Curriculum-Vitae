@@ -25,6 +25,7 @@
 {{--</x-layout>--}}
 <x-layout>
     @include('posts._header')
+    @auth
     <main class="max-w-6xl mx-auto mt-6 lg:mt-20 space-y-6">
         @if ($posts->count())
             <x-posts-grid :posts="$posts"/>
@@ -32,6 +33,8 @@
         @else
             <p class="text-center"><strong>No Post Available.</strong></p>
         @endif
+        @include('posts._footer')
     </main>
+    @endauth
 </x-layout>
 

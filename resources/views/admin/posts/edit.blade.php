@@ -1,5 +1,5 @@
 <x-layout>
-    <x-setting :heading="'Edit Post: ' . $post->title">
+    <x-setting :heading="'Edit CV: ' . $post->title">
         <form method="POST" action="/admin/posts/{{$post->id}}" enctype="multipart/form-data">
             @csrf
             @method('PATCH')
@@ -9,7 +9,7 @@
                 <div class="flex-1">
                     <x-form.input name="thumbnail" type="file" :value="old('thumbnail', $post->thumbnail)"/>
                 </div>
-                <img src="/images/illustration-1.png" alt="" class="rounded-xl ml-6" width="100"></div>
+                <img src="https://i.pravatar.cc/100?u={{$comment->user_id}}" alt="" class="rounded-xl ml-6" width="100"></div>
             <x-form.textarea name="excerpt">{{ old('excerpt', $post->excerpt) }}</x-form.textarea>
             <x-form.textarea name="body">{{ old('body', $post->body) }}</x-form.textarea>
             <x-form.field>
