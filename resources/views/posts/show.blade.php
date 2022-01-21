@@ -33,7 +33,7 @@
                                 </g>
                             </svg>
 
-                            Back to Posts
+                            Back to CVs
                         </a>
 
                         <div class="space-x-2">

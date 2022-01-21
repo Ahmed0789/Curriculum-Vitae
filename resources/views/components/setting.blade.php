@@ -8,11 +8,11 @@
             <h4 class="font-semibold mb-4">Links</h4>
             <ul>
                 <li>
-                    <a href="/admin/posts" class="{{request()->is('admin/posts')? 'text-blue-500' : ''}}">All Posts</a>
+                    <a href="/admin/posts" class="{{request()->is('admin/posts')? 'text-blue-500' : ''}} bg-gray-200 border border-gray-100 px-10">All CVs</a>
                 </li>
                 <li>
-                    <a href="/admin/posts/create" class="{{request()->is('admin/posts/create')? 'text-blue-500' : ''}}">New
-                        Post</a>
+                    <a href="/admin/posts/create" class="{{request()->is('admin/posts/create')? 'text-blue-500' : ''}} bg-gray-200 border border-gray-100 px-9">New
+                        CV</a>
                 </li>
             </ul>
         </aside>
